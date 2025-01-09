@@ -8,7 +8,7 @@ _1 = np.array([0, 1], dtype=np.complex64)
 _M0 = np.outer(_0, _0)
 _M1 = np.outer(_1, _1)
 
-a = 0.2  # Amplitude for |0> in qubit0
+a = 0.6  # Amplitude for |0> in qubit0
 b = np.sqrt(1 - a ** 2)  # Amplitude for |1> in qubit0
 
 _psi = np.array([a, b], dtype=np.complex64)
@@ -115,3 +115,5 @@ if __name__ == "__main__":
     qsys = define_qsystem()
     three_qubits_rep_code(qsystem=qsys, flipped_indices=[2])
     fix_error(qsys)
+
+
